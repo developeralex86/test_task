@@ -95,9 +95,7 @@ hot data in smaller partitions that fit in the buffer pool.
 `LIKE '%organic%'` against 1M rows will table-scan. Extract search to a dedicated
 engine and keep MySQL for transactional data.
 
----
-
-## Part 2 — Architecture Improvements
+**7. Architecture Improvements**
 
 See `app/` directory for the refactored implementation.
 
@@ -112,9 +110,7 @@ See `app/` directory for the refactored implementation.
 | No authorization | Policy + Gates | RBAC without controller clutter |
 | N+1 queries | Eager loading | Constant query count |
 
----
-
-## Part 3 — Key Feature Implemented
+**7. Key Feature Implemented**
 
 ### Feature: Lead Assignment with Audit Trail
 
