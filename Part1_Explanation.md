@@ -1,6 +1,6 @@
 # Super Organics CRM — Technical Assessment
 
-## Part 1 — Debug & Review
+## Debug & Review
 
 ### Q1. What performance problem exists in this code?
 
@@ -110,7 +110,7 @@ See `app/` directory for the refactored implementation.
 | No authorization | Policy + Gates | RBAC without controller clutter |
 | N+1 queries | Eager loading | Constant query count |
 
-**7. Key Feature Implemented**
+**8. Key Feature Implemented**
 
 ### Feature: Lead Assignment with Audit Trail
 
