@@ -139,16 +139,6 @@ Body: { "user_id": 42 }
 
 ---
 
-## Running the Project
-
-```bash
-cp .env.example .env
-composer install
-php artisan key:generate
-php artisan migrate --seed
-php artisan serve
-```
-
 Test the endpoints:
 ```bash
 # List leads (paginated, eager-loaded)
