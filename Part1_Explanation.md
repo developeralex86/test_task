@@ -48,7 +48,7 @@ there are. The relationship is then hydrated in-memory.
 
 ### Q3. If the table grows to 1M leads, what database changes would you consider?
 
-**1. Indexes first — biggest gains, zero downtime**
+**1. Indexes first**
 
 ```sql
 -- Already missing: the foreign key column has no index
@@ -59,7 +59,7 @@ CREATE INDEX idx_leads_status_created ON leads (status, created_at DESC);
 CREATE INDEX idx_leads_company_status ON leads (company_id, status);
 ```
 
-**2. Pagination — mandatory, not optional**
+**2. Pagination**
 
 Return 50 rows at a time via `paginate(50)`. Fetching 1M rows into PHP memory
 will crash the process regardless of query speed.
